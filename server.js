@@ -5,12 +5,13 @@ const connectDB = require('./config/dataBase')
 const bodyPerser = require('body-parser')
 
 
+
 const app = express()
 
 // const router =express.Router()
 // configuration mte3 dotenv bech najem ne5dem b process.env.DB-URI
 require('dotenv').config()
-// app.use(express.json)
+app.use(express.json())
 
 
 
@@ -26,8 +27,8 @@ const userModel = require('./moduls/user')
 
 const router= require('./router/usersRouter')
 
-app.use(bodyPerser.urlencoded({extended :false}))
-app.use(bodyPerser.json())
+// app.use(bodyPerser.urlencoded({extended :false}))
+// app.use(bodyPerser.json())
 
 app.use("/api",router)
 
