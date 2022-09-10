@@ -2,7 +2,7 @@ const express = require('express')
 
 const connectDB = require('./config/dataBase')
 
-const bodyPerser = require('body-parser')
+// const bodyPerser = require('body-parser')
 
 
 
