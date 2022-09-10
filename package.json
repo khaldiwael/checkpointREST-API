@@ -1,0 +1,21 @@
+{
+  "name": "ch",
+  "version": "1.0.0",
+  "description": "checkpoint rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wael",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2",
+    "nodemon": "^2.0.19"
+  }
+}
